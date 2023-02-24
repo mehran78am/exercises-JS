@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ddd;
+  overflow-x: hidden;
+}
+
+.example {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #aaa;
+  border-radius: 8px;
+}
+
+.title {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 25px;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 20px;
+}
+
+/* Fibonacci */
+
+.form {
+  display: inline-block;
+}
+
+.form::after,
+.form::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.btn,
+.number {
+  float: left;
+  border: none;
+  outline: none;
+  transition: all 0.3s linear;
+}
+
+.number {
+  width: 100px;
+  padding-left: 10px;
+  border-radius: 5px 0 0 5px;
+}
+
+.btn {
+  width: 60px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+  border-radius: 0 5px 5px 0;
+}
+
+.btn:hover {
+  background-color: #449d44;
+  border-color: #398439;
+}
+
+.number:focus {
+  background-color: #ddd;
+}
+
+.paragraph {
+  display: inline-block;
+  font-size: 18px;
+  margin: 0 15px;
+  text-transform: capitalize;
+  line-height: 25px;
+}
